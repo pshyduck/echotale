@@ -32,6 +32,7 @@
 }
 
 .choice-button__word-en {
+  font-family: var(--playful);
   font-size: 22px;
   font-weight: 700;
   text-transform: capitalize;
