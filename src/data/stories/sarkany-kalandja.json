@@ -1,0 +1,76 @@
+{
+  "story_id": "sarkany-kalandja",
+  "title": "A sárkány kalandja",
+  "start_node": "node_color",
+  "nodes": {
+    "node_color": {
+      "text_hu": "Egyszer volt, hol nem volt, élt egyszer egy kis sárkány, aki most kelt ki a tojásból. Milyen színű legyen a sárkány?",
+      "choices": [
+        { "word_hu": "kék", "word_en": "blue", "icon": "🔵", "next": "node_color_blue" },
+        { "word_hu": "piros", "word_en": "red", "icon": "🔴", "next": "node_color_red" },
+        { "word_hu": "zöld", "word_en": "green", "icon": "🟢", "next": "node_color_green" }
+      ]
+    },
+    "node_color_blue": {
+      "text_hu": "A sárkány gyönyörű kék lett, mint az égbolt.",
+      "text_en": "In English: The dragon is blue.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_place" }]
+    },
+    "node_color_red": {
+      "text_hu": "A sárkány élénk piros lett, mint a tűz.",
+      "text_en": "In English: The dragon is red.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_place" }]
+    },
+    "node_color_green": {
+      "text_hu": "A sárkány zöld lett, mint a friss fűszál.",
+      "text_en": "In English: The dragon is green.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_place" }]
+    },
+    "node_place": {
+      "text_hu": "A sárkány megéhezett, ezért repülni indult. Hova repüljön először?",
+      "choices": [
+        { "word_hu": "erdő", "word_en": "forest", "icon": "🌲", "next": "node_place_forest" },
+        { "word_hu": "hegy", "word_en": "mountain", "icon": "⛰️", "next": "node_place_mountain" },
+        { "word_hu": "tenger", "word_en": "sea", "icon": "🌊", "next": "node_place_sea" }
+      ]
+    },
+    "node_place_forest": {
+      "text_hu": "A sárkány leszállt a sűrű erdőben, ahol magas fák nyújtózkodtak az ég felé.",
+      "text_en": "In English: The dragon landed in the forest.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_friend" }]
+    },
+    "node_place_mountain": {
+      "text_hu": "A sárkány leszállt a magas hegy tetején, ahonnan az egész vidéket látta.",
+      "text_en": "In English: The dragon landed on the mountain.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_friend" }]
+    },
+    "node_place_sea": {
+      "text_hu": "A sárkány leszállt a tenger partján, ahol a hullámok csendesen morajlottak.",
+      "text_en": "In English: The dragon landed by the sea.",
+      "choices": [{ "word_hu": "tovább", "word_en": "next", "icon": "▶️", "next": "node_friend" }]
+    },
+    "node_friend": {
+      "text_hu": "Ekkor a sárkány egy új barátot pillantott meg. Ki legyen a sárkány barátja?",
+      "choices": [
+        { "word_hu": "róka", "word_en": "fox", "icon": "🦊", "next": "node_end_fox" },
+        { "word_hu": "maci", "word_en": "bear", "icon": "🐻", "next": "node_end_bear" },
+        { "word_hu": "nyuszi", "word_en": "rabbit", "icon": "🐰", "next": "node_end_rabbit" }
+      ]
+    },
+    "node_end_fox": {
+      "text_hu": "A ravasz róka és a sárkány gyorsan nagy barátok lettek, és együtt fedezték fel a világot. Vége.",
+      "text_en": "In English: The fox and the dragon became best friends. The end.",
+      "choices": []
+    },
+    "node_end_bear": {
+      "text_hu": "A mackó és a sárkány nagy barátok lettek, és minden nap együtt játszottak. Vége.",
+      "text_en": "In English: The bear and the dragon became best friends. The end.",
+      "choices": []
+    },
+    "node_end_rabbit": {
+      "text_hu": "A nyuszi és a sárkány nagy barátok lettek, és versenyt futottak a réten. Vége.",
+      "text_en": "In English: The rabbit and the dragon became best friends. The end.",
+      "choices": []
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.choice-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 140px;
+  padding: 20px 16px;
+  border: 3px solid var(--border);
+  border-radius: 20px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.choice-button:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.choice-button:active {
+  transform: translateY(0);
+}
+
+.choice-button--highlighted {
+  border-color: var(--accent);
+  background: #fff3e6;
+}
+
+.choice-button__icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.choice-button__word-en {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.choice-button__word-hu {
+  font-size: 15px;
+  color: #8a7a63;
+}
